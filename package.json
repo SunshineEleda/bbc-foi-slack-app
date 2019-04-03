@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@slack/client": "^4.12.0",
+    "country-list": "^2.1.0",
+    "isomorphic-fetch": "^2.2.1",
+    "query-string": "^6.4.0",
+    "serverless": "^1.39.1",
+    "serverless-offline": "^4.9.2",
+    "twitter": "^1.7.1"
+  }
+}

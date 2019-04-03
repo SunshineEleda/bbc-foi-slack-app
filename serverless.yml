@@ -1,0 +1,37 @@
+service: aws-nodejs
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  start:
+    handler: handler.start
+    events:
+      - http:
+          path: start
+          method: post
+
+  history:
+    handler: handler.history
+    events:
+      - http:
+          path: history
+          method: post
+
+  oauth:
+    handler: handler.oauth
+    events:
+      - http:
+          path: oauth
+          method:
+
+  twitter:
+    handler: handler.twitter
+    events:
+      - http:
+          path: search/tweets
+          method: get
+
+plugins:
+  - serverless-offline
